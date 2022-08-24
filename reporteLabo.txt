@@ -1,0 +1,34 @@
+Llave creada
+ 
+Llave publica y comando 
+ 
+
+ 
+
+
+
+Llave privada y comando
+ 
+
+ 
+Listado de llaves
+ 
+Cifrado simetrico
+ 
+ 
+Cifrado asimetrico
+ 
+archivos firmados
+ 
+ 
+ 
+git configurado
+ 
+
+
+
+
+
+
+
+
