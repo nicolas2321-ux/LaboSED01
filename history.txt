@@ -1,0 +1,44 @@
+    1  sudo apt install build-essential dkms linux headers-$(uname -r)
+    2  sudo su 
+    3  su -
+    4  cp  -r ./ ~/Escritorio/cd
+    5  cd ~/Escritorio
+    6  cd cd
+    7  chmod +x autorun.sh
+    8  ./autorun.sh 
+    9  sudo reboot now
+   10  touch saludo
+   11  ls
+   12  nano saludo 
+   13  md5sum saludo
+   14  sha1sum saludo 
+   15  sha224sum saludo 
+   16  sha256sum saludo 
+   17  sha256sum saludo > checksum
+   18  ls
+   19  nano checksum 
+   20  sha256sum -c checksum 
+   21  sudo apt install gnupg
+   22  gpg --full-generate-key 
+   23  gpg --list-keys
+   24  gpg --export-secret-keys --armor 00035819@uca.edu.sv > ./sec_cop_key.asc
+   25  ls
+   26  nano sec_cop_key.asc 
+   27  gpg  --armor --export 00035819@uca.edu.sv > sec_pub_key.asc
+   28  ls
+   29  nano sec_pub_key.asc 
+   30  gpg --output my_revocation_certificate.asc --gen--revoke 00035819@uca.edu.sv
+   31  gpg --output my_revocation_certificate.asc --gen-revoke 00035819@uca.edu.sv
+   32  touch miguel.gpg
+   33  ls
+   34  nano miguel.gpg 
+   35  gpg --import ~/miguel.gpg 
+   36  gpg --edit-key 00087518@uca.edu.sv
+   37  gpg --list-keys
+   38  nextor.gog
+   39  touch nextor.gpg
+   40  nano nextor.gpg 
+   41  gpg --import ~/nextor.gpg 
+   42  gpg --edit-key naldana@uca.edu.sv
+   43  gpg --list-keys
+   44  history > history.txt
